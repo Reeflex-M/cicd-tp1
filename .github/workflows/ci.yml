@@ -21,7 +21,7 @@ jobs:
           cache: maven
           
       - name: Run Unit Tests
-        # On lance les tests mais on exclut le test d'intégration
+        #Exclure tests intégration
         run: mvn test -Dtest=!PricingIntegrationTest
 
   # JOB 2 : Qualité (Bonus)
@@ -43,7 +43,7 @@ jobs:
 
   # JOB 3 : Tests d'Intégration
   integration-tests:
-    needs: quality # Attend que la qualité soit OK
+    needs: quality # depend-on quality
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -55,5 +55,5 @@ jobs:
           cache: maven
           
       - name: Run Integration Tests
-        # On lance uniquement le test d'intégration
+        # Exec que les tests intégrations
         run: mvn test -Dtest=PricingIntegrationTest
