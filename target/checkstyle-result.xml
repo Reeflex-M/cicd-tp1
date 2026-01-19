@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="D:\dev\citest\src\main\java\com\devops\cicd\PasswordPolicy.java">
+<file name="D:\dev\order-service\src\main\java\com\devops\cicd\PasswordPolicy.java">
+</file>
+<file name="D:\dev\order-service\src\main\java\com\devops\cicd\PricingConfig.java">
+</file>
+<file name="D:\dev\order-service\src\main\java\com\devops\cicd\PricingConfigLoader.java">
+</file>
+<file name="D:\dev\order-service\src\main\java\com\devops\cicd\PricingService.java">
+</file>
+<file name="D:\dev\order-service\src\test\resources\app.properties">
 </file>
 </checkstyle>
